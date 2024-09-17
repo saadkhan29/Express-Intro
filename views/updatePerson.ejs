@@ -1,0 +1,19 @@
+<h1> Edit Person </h1>
+
+<form method="POST" action="/api/person/update">
+
+  <label>First Name: </label>
+  <input type="text" name="firstName" id="firstName" value="<%= data.firstName %>">
+
+  <br>
+
+  <label>Last Name: </label>
+  <input type="text" name="lastName" id="lastName" value="<%= data.lastName %>">
+
+  <br>
+
+  <input type="hidden" name="id" value="<%= id %>">
+
+  <input type="submit" name="submit" value="Update">
+
+</form>
